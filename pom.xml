@@ -33,6 +33,7 @@
         <module>spring</module>
         <module>dubbo</module>
         <module>test</module>
+        <module>examples</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -225,11 +226,11 @@
                 <artifactId>zkclient</artifactId>
                 <version>${zkclient.version}</version>
             </dependency>
-            <dependency>
+            <!--<dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>dubbo-registry-nacos</artifactId>
                 <version>${dubbo.registry.nacos}</version>
-            </dependency>
+            </dependency>-->
             <dependency>
                 <groupId>com.alibaba.spring</groupId>
                 <artifactId>spring-context-support</artifactId>
@@ -258,7 +259,7 @@
                             </execution>
                         </executions>
                     </plugin>
-                    <!-- Javadoc -->
+                    <!-- Javadoc
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
@@ -275,6 +276,7 @@
                             </execution>
                         </executions>
                     </plugin>
+                    -->
                     <!-- GPG -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
